@@ -16,7 +16,7 @@ LOCAL_SRC_FILES := \
     src/gnu_asm/ARMv6_dot_product.S\
     src/gnu_asm/ARMv6_predictor.s
 
-LOCAL_EXPORT_C_INCLUDE_DIRS := $(MTK_PATH_SOURCE)/external/apedec/arm_32/inc
+LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/inc
 LOCAL_CFLAGS += -D__arm__ -D__ANDROID__ -D'__inline=inline' -D'__int64=long long' -mcpu=arm1136j-s -O3 -D'STATIC_DECLARE=static' -DSTATIC_ENHANCE -D'EXTERN=static'
 ifeq ($(symbol), scramble)
 LOCAL_CFLAGS +=-D__SCRAMBLE_SYMBOL__

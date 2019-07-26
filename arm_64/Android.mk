@@ -12,9 +12,8 @@ LOCAL_SRC_FILES := \
     #src/gnu_asm/ARMv6_dot_product.S\
     #src/gnu_asm/ARMv6_predictor.s
 
-LOCAL_EXPORT_C_INCLUDE_DIRS := $(MTK_PATH_SOURCE)/external/apedec/arm_64/inc \
-                    $(MTK_PATH_SOURCE)/external/apedec/arm_64/src
-
+LOCAL_C_INCLUDES := $(MTK_PATH_SOURCE)/external/apedec/arm_64/inc
+                     
 LOCAL_CFLAGS += -DARM -D__arm__ -D__ANDROID__ -D'__inline=inline' -D'__int64=long long' -D'STATIC_DECLARE=static' -DSTATIC_ENHANCE -D'EXTERN=static'
 
 ifeq ($(symbol), scramble)
