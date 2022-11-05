@@ -1,0 +1,18 @@
+cc_library_static {
+    name: "libapedec_mtk",
+    vendor: true,
+    proprietary: true,
+
+    srcs: [
+        "src/ape_decoder_swip.c",
+    ],
+
+    export_include_dirs: [
+        "inc",
+    ],
+
+    shared_libs: [
+        "libcutils",
+        "libutils",
+    ],
+}

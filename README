@@ -1,0 +1,23 @@
+WHAT IS IT?
+=============
+
+apedec is an ape decoder library.
+This software is modified from FFmpeg 4.2.3.
+- ape_decoder_swip.c is based on part of below files:
+                https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/apedec.c
+                https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/bswapdsp.c
+                https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/bytestream.h
+                https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/lossless_audiodsp.c
+
+- ape_decoder_swip.h is based on part of below files:
+                https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/get_bits.h
+                https://github.com/FFmpeg/FFmpeg/blob/master/libavutil/common.h
+                https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/unary.h
+
+
+WHAT IS THE LICENSE?
+==============
+
+LGPL-licensed
+
+
